@@ -1,13 +1,13 @@
- #include <stdio.h>
- #include <time.h>
- #include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
- /**
- * main - Entry point
- * Return: 0
-   */
- int main(void)
- {
+/**
+* main - Entry point
+* Return: 0
+*/
+int main(void)
+{
 	int n;
 
 	srand(time(0));
@@ -27,4 +27,3 @@
 	}
 		return (0);
  }
-
