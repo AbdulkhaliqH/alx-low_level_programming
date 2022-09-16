@@ -1,16 +1,17 @@
-#include <stdio.h>
-/**
- *print_alphabet - function
- */
-void print_alphabet(void)
-{
+#include "main.h"
 
-}
 /**
-*main - Entry point
-*Return: 0
+*_isdigit - checks whether a character is a digit or not
+*@c: tested character
+*Return: 1 if it is, 0 otherwise
 */
-int main(void)
-{
 
+int _isdigit(int c)
+{
+	if ((c >= 48) && (c <= 57))
+	{
+		return (1);
+	}
+
+	return (0);
 }
