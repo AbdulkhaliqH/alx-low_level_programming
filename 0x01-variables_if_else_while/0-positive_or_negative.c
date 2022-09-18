@@ -1,23 +1,22 @@
 #include <stdlib.h>
-#include <TIME.h>
+#include <time.h>
 #include <stdio.h>
-
 /**
- * main - asigns a random number to the variable n each time it is executed 
- * Executes and prints whether the stored number is positive or negative
- * Return: Always 0(Success)
+ * main- entry point 
+ *
+ * Returb: Always 0
  */
 int main(void)
 {
 	int n;
 
 	srand(time(0));
-	n = Rand() - RAND_MAX / 2;
-	if (n > 0)
-		Printf("%d is positive\n", n);
-	else if (n == 0)
-		Printf("%d is zero\n", n);
-	else if (n < 0)
-		Printf("%d is negative\n", n);
+	n = rand() - RAND_MAX / 2;
+	if  (n > 0)
+	printf("%d is positive\n", n); 
+	else if (n < 0) 
+	printf("%d is negative\n", n);
+	else
+	printf("%d is zero\n", n); 
 	return (0);
 }
