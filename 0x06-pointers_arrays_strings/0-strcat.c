@@ -1,14 +1,22 @@
 #include "main.h"
-#include <unistd.h>
-
 /**
- * _putchar - writes the character c to stdout
- * @c: the character to print
- *
- * Return: on success 1.
- * on error, -1 is returned, and error is set appriopriately.
+ * _strcat -> this is a funcion strcat
+ * @dest: first param
+ * @src: second param
+ * Return: a string
  */
-int _putchar(char c)
+char *_strcat(char *dest, char *src)
 {
-	return (write(1, &c, 1));
+	int len = 0, i;
+	
+	while (dest[len])
+		len++;
+
+	for (i = 0; src[i] != 0; i++)
+	{
+		dest[len] = src[i];
+		len += 1;
+	}
+	dest[len] = '\0';
+	return (dest);
 }
