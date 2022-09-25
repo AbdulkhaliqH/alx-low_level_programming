@@ -1,13 +1,18 @@
+#include <unistd.h>
 #include <stdio.h>
 /**
  * main - Entry point
+ * Description: prints lowcase alphabeth in reverse
  * Return: 0.
  */
 int main(void)
 {
-char abd;
-for (abc = 'z'; abc >= 'a'; abc--)
-putchar(abc);
+	int a;
+
+	for (a = 'z'; a >= 'a'; a--)
+	{
+		putchar(a);
+	}
 putchar('\n');
 return (0);
 }
