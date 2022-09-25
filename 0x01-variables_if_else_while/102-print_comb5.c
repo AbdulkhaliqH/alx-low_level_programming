@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
+ *
  * Return: 0.
  */
 int main(void)
@@ -8,23 +9,21 @@ int main(void)
 int numR;
 int numL;
 int numM;
-for (numL = 48; numL <= 57; numL++)
+for (numLeft = 0; numLeft < 100; numLeft++)
 {
-for (numM = numL + 1; numM <= 57; numM++)
+for (numLast = 0; numLast < 100; numLast++)
 {
-for (numR = numM + 1; numR <= 57; numR++)
+if (numLeft < numLast)
 {
-if (numM != numR)
+putchar(numLeft / 10 + 48);
+putchar(numLeft % 10 + 48);
+putchar(32);
+putchar(numLast / 10 + 48);
+putchar(numLast % 10 + 48);
+if (numLeft < 98)
 {
-putchar(numL);
-putchar(numM);
-putchar(numR);
-if (!(
-numR == 57 && numM == 56 && numL == 55))
-{
-putchar(',');
-putchar(' ');
-}
+putchar(44);
+putchar(32);
 }
 }
 }
