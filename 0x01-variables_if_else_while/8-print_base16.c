@@ -6,15 +6,11 @@
  */
 int main(void)
 {
-int i;
-for (i = 48; i < 58; i++)
-{
-	putchar(i);
-}
-for (i = 97; i < 103; i++)
-{	
-	puthcar(i);
-}
+char abd;
+for (abc = '0'; abc <= '9'; abc++)
+putchar(abc);
+for (abc = 'a'; abc <= 'f'; abc++)
+putchar(abc);
 putchar('\n');
 return (0);
 }
